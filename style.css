@@ -1,0 +1,1336 @@
+body{
+
+	margin: 0 auto;
+
+	font-family: Comfortaa;
+
+	width: 1024px;
+
+	box-shadow:4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+}
+
+header{
+
+	background-color: #e5f4f9;
+
+	justify-content: space-around;
+
+	padding: 10px;	
+
+}
+
+footer{
+
+	background-color: #e5f4f9;
+
+	padding: 10px;
+
+}
+
+
+
+.counter_container{
+
+	z-index: 1;
+
+}
+
+.counter{
+
+	font-size: 12px;
+
+}
+
+.korzina{
+
+	display: flex;
+
+}
+
+.select_citi{
+
+	margin-left: 300px; 
+
+	margin-top: 200px;
+
+	position: fixed;
+
+	z-index: 3;
+
+	display: none;
+
+	background-color: #4D71AB;
+
+	width: 300px;
+
+	text-align: center;
+
+	color: #FFFFFF;
+
+	border-radius: 30px;
+
+	overflow: auto;
+
+	font-size: 18px;
+
+	padding-top: 10px;
+
+	padding-bottom: 30px;
+
+}
+
+.select_citi a{
+
+	color: #FFFFFF;
+
+	text-decoration: none;
+
+}
+
+.select_citi a:hover{
+
+	color: #e5f4f9;
+
+}
+
+.temno{
+
+	width: 1024px;
+
+	height: 100%;
+
+	margin-left: -10px;
+
+	margin-top: -10px;
+
+	position: fixed;
+
+	background-color: #000000;
+
+	filter: blur(2px);
+
+	opacity: 70%;
+
+	display: none;
+
+	z-index: 2;	
+
+}
+
+.close_pupup{
+
+	color: #FFFFFF;
+
+	font-size: 30px;
+
+	margin-left: 200px;  
+
+}
+
+.vibir_gorod{
+
+font-weight: 700; 
+
+}
+
+.vibir:hover{
+
+cursor: pointer;
+
+}
+
+.hidden {
+
+	display: none;
+
+}
+
+/*навигация*/
+
+.nav_menu{
+
+	display: flex;
+
+	justify-content: space-around;
+
+	list-style: none;
+
+	width: 1000px;
+
+}
+
+.nav_menu li{
+
+	text-align: center;
+
+}
+
+.nav_menu li p{
+
+	font-size: 10px;
+
+}
+
+.openNav:hover{
+
+cursor: pointer;
+
+}
+
+.gorod{
+
+	display: flex;
+
+}
+
+.banner{
+
+	display: flex;
+
+}
+
+/*слайдер главная*/
+
+.container_slider_css{
+
+	width:1700px;
+
+	height:300px;
+
+	overflow:hidden;
+
+	position:relative
+
+}
+
+.photo_slider_css{
+
+	position:absolute;
+
+	animation:round 16s infinite;
+
+	opacity:0;width:100%
+
+}
+
+@keyframes round {
+
+25%{opacity:1}
+
+40%{opacity:0}
+
+}
+
+img:nth-child(1){animation-delay:12s}
+
+img:nth-child(2){animation-delay:8s}
+
+img:nth-child(3){animation-delay:4s}
+
+img:nth-child(4){animation-delay:0}
+
+@media(min-width:0px) and (max-width:320px) {
+
+.container_slider_css{
+
+	width:80%;
+
+	height:190px
+
+}
+
+}
+
+@media(min-width:321px) and (max-width:480px) {
+
+.container_slider_css{
+
+	width:80%;
+
+	height:190px
+
+}
+
+}
+
+/*Стили акции и спец предложения*/
+
+.obertka_akcii{
+
+	padding: 10px;
+
+}
+
+.akcii{
+
+	display: flex;
+
+	justify-content: space-around;
+
+	flex-wrap: wrap;
+
+	list-style: none;	
+
+}
+
+.akcii li{
+
+	margin-left: 40px;
+
+	margin-left:0px;
+
+	text-align:center;
+
+}
+
+
+
+.img_preparat{
+
+	width: 200px;
+
+	height: 200px;
+
+}
+
+/*Стили для навигации алфавита*/
+
+.nav_alf{
+
+	display: flex;
+
+	justify-content: space-around;
+
+	flex-wrap: nowrap;
+
+	list-style: none;	
+
+}
+
+.nav_alf li{
+
+	padding-left: 0px;
+
+}
+
+.nav_alf li a{
+
+	color:#4D71AB;
+
+	text-decoration: none;
+
+	font-weight:700;
+
+}
+
+.nav_alf li a:hover{
+
+	color: #328f6c;
+
+}
+
+.poisk_preparat h2{
+
+	margin-left: 10px; 
+
+}
+
+
+
+.ikons_bottom{
+
+	width:50px; 
+
+	height:30px;
+
+}
+
+.popup-btn {
+
+  display: none;
+
+  position: absolute;
+
+  margin-top: 30px;
+
+  width: 100px;
+
+  height:40px;
+
+  font-size: 18px;
+
+  background-color: #4D71AB; 
+
+  color: #FFFFFF;
+
+  border: none;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+}
+
+.akcii li:hover .popup-btn {
+
+  display: block;
+
+  transition: 0.5s; /* отображение кнопки при наведении на контейнер */
+
+}
+
+/*Стили для подвала*/
+
+.nav_bottom{
+
+	display: flex;
+
+	justify-content: space-around;
+
+	flex-wrap: wrap;
+
+	list-style: none;
+
+}
+
+.nav_bottom li{
+
+	margin-left: 30px;
+
+	margin-bottom: 10px; 	
+
+}
+
+.nav_bottom a{
+
+	color: #4D71AB;
+
+	text-decoration: none;
+
+	font-weight:700;
+
+}
+
+.nav_bottom a:hover{
+
+	color: #328f6c;
+
+}
+
+.inf{
+
+	display: flex;
+
+	justify-content: space-around;	
+
+	list-style: none;
+
+}
+
+.burger{
+
+	display: flex;
+
+}
+
+/* Скрываемая боковая панель*/
+
+/*Верстаем саму панель*/
+
+.sidenav {
+
+    height: 100%; 
+
+    width: 0;
+
+	position: absolute;
+
+    z-index: 1;
+
+    background-color: #4D71AB; 
+
+    overflow-x: hidden; 
+
+    padding-top: 60px; 
+
+    transition: 0.5s; 
+
+}
+
+/* Работа с сылками */
+
+.sidenav p {
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+	color:#FFFFFF;
+
+    display: block;
+
+    transition: 0.8s;
+
+    font-weight: bold;
+
+}
+
+.sidenav a {
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+	color:#FFFFFF;
+
+    display: block;
+
+    transition: 0.8s;
+
+    font-weight: bold;
+
+}
+
+/* Работа с сылками/наведение */
+
+.sidenav p:hover {
+
+    color: #A6BDDC;
+
+    text-decoration: underline;
+
+    text-underline-offset: 10px;
+
+}
+
+.sidenav a:hover {
+
+    color: #A6BDDC;
+
+    text-decoration: underline;
+
+    text-underline-offset: 10px;
+
+}
+
+.menu_skrito_sidenav ul{
+
+list-style: none;
+
+}
+
+.menu_skrito_sidenav p{
+
+	margin-left: 10px; 
+
+}
+
+.sidenav .closebtn {
+
+    position: absolute;
+
+    top: 0;
+
+    right: 25px;
+
+    font-size: 36px;
+
+    margin-left: 50px;
+
+}
+
+.menu_skrito_sidenav_items{
+
+    color:#FFFFFF;
+
+    margin-bottom: 30px;	
+
+}
+
+/*Рисую бургер панель*/
+
+.burger_panel_background{
+
+	background-color:#7FBFB4;
+
+	padding: 5px;
+
+	border-radius: 10px;
+
+	width: 30px;
+
+	height: 20px;
+
+}
+
+.burger_panel_background:hover{
+
+	background-color:#A6BDDC;
+
+	transition: 0.8s;
+
+}
+
+.burger_panel{
+
+	width: 20px;
+
+	height: 2.5px;
+
+	background-color:#FFFFFF;
+
+	margin-bottom: 5px;
+
+	margin-left: 5px; 
+
+}
+
+
+
+/*Меню поиска*/
+
+.poisk{
+
+	border-radius: 20px;
+
+	font-size: 16px;
+
+	width: 300px;
+
+	height: 16px;
+
+	border:none;
+
+	padding: 10px;
+
+	color:#4D71AB;
+
+}
+
+.obertka_nav_menu{
+
+	display: flex;
+
+	margin-left: 20px; 
+
+}
+
+.logo_img{
+
+	width: 40px;
+
+	height: 60px;	
+
+}
+
+/*------------------Работа с ценой текст------------------*/
+
+.cena_edini{
+
+	display: flex;
+
+	justify-content: center;
+
+	list-style: none;
+
+	margin: 0px;
+
+}
+
+.old_price{
+
+	color: #808080;	
+
+	text-decoration: line-through;
+
+	font-size: 16px;	
+
+}
+
+.new_price{
+
+	color: #4D71AB;
+
+	font-weight: 700;
+
+	font-size: 16px;		 
+
+}
+
+.opisanie_preparat_obertka{
+
+
+
+	text-align: center;
+
+}
+
+.opisanie_preparat{
+
+	font-size: 10px;		
+
+}
+
+.opisanie_preparat_recept{
+
+	font-size: 10px;
+
+	color: #FF0000;		
+
+}
+
+/*кнопки*/
+
+.add_korzina{
+
+  
+
+  width: 100px;
+
+  height:20px;
+
+  font-size: 10px;
+
+  background-color: #000000; 
+
+  color: #FFFFFF;
+
+  border: none;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+}
+
+.add_korzina:hover{
+
+	 background-color: #696969;
+
+
+
+}
+
+
+
+/*--------------------страница растворы------------*/
+
+.shagi_nav{
+
+	list-style: none;
+
+	display: flex;
+
+	justify-content: space-between;
+
+
+
+}
+
+.shagi_nav li{
+
+	text-align: center;
+
+}
+
+.shagi_img{
+
+	width: 225px;
+
+	height: 200px;	
+
+}
+
+.rastvor_button{
+
+	background-color: #8b9ede;
+
+	color: #FFFFFF;
+
+	border: none;
+
+	border-radius: 10px;
+
+	padding: 10px;
+
+	margin-left: 500px; 
+
+}
+
+/*страница орв*/
+
+.orv_pokepka{
+
+	display: flex;
+
+	justify-content: space-around;
+
+	flex-wrap: wrap;
+
+	list-style: none;	
+
+}
+
+.orv_pokepka li{
+
+	margin-left: 40px;
+
+	margin-left:0px;
+
+	text-align:center;
+
+}
+
+.orv_pokepka img{
+
+width: 200px;
+
+height: 200px;
+
+}
+
+.card{
+
+	width: 490px;
+
+}
+
+
+
+.items_couter_obertka{
+
+	display: flex;
+
+	justify-content: center;
+
+	margin-bottom: 5px;
+
+}
+
+.items_couter_obertka div{
+
+	margin-left: 5px;
+
+}
+
+
+
+.add_korzina_shet_plus{  
+
+  width: 20px;
+
+  height:20px;
+
+  font-size: 10px;
+
+  background-color: #4D71AB; 
+
+  color: #FFFFFF;
+
+  border: none;
+
+  border-radius: 5px 0px 0px 5px;
+
+  cursor: pointer;
+
+}
+
+.add_korzina_shet_count{  
+
+  width: 20px;
+
+  height:20px;
+
+  font-size: 10px;
+
+  background-color: #4D71AB; 
+
+  color: #FFFFFF;
+
+  border: none;
+
+  border-radius: 0px 0px 0px 0px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+
+}
+
+.add_korzina_shet_min{  
+
+  width: 20px;
+
+  height:20px;
+
+  font-size: 10px;
+
+  background-color: #4D71AB; 
+
+  color: #FFFFFF;
+
+  border: none;
+
+  border-radius: 0px 5px 5px 0px;
+
+  cursor: pointer;
+
+}
+
+.add_korzina_shet_plus:hover,  .add_korzina_shet_min:hover{
+
+	 background-color: #328f6c;
+
+
+
+}
+
+/*Коризна открытая*/
+
+.model_basket{
+
+	display: none;
+
+	position:fixed;
+
+	background: rgba(77, 113, 171,0.7);;
+
+	width: 100%;
+
+	height: 100%;
+
+	left: 0;
+
+	top: 0;
+
+	z-index: 8;
+
+	padding: 20px;
+
+	overflow-y: auto; 
+
+}
+
+.content_model_basket{
+
+	background: #FFFFFF;
+
+	width: 500px;
+
+	padding: 20px;
+
+	margin: 0 auto;
+
+}
+
+.pass{
+
+	background-color: #8b9ede;
+
+	color: #FFFFFF;
+
+	border: none;
+
+	border-radius: 10px;
+
+	padding: 10px;
+
+}
+
+.pass:hover{
+
+	 background-color: #328f6c;
+
+}
+
+.close_model_basket{
+
+	 margin-left: 400px;
+
+}
+
+.close_model_basket:hover{
+
+	 color: #328f6c;
+
+}
+
+/*-----------Форма заказа-------------*/
+
+.close_form_zakaz{
+
+	margin-left: 690px;
+
+}
+
+.close_form_zakaz:hover{
+
+	 color: #328f6c;
+
+	 cursor: pointer;
+
+}
+
+.forma_zakaza{
+
+	display: none;
+
+	position:fixed;
+
+	background: rgba(77, 113, 171,0.7);
+
+	width: 100%;
+
+	height: 100%;
+
+	left: 0;
+
+	top: 0;
+
+	z-index: 8;
+
+	padding: 20px;
+
+	overflow-y: auto;
+
+
+
+}
+
+.forma_zakaza_form{
+
+	background: #FFFFFF;
+
+	width: 700px;
+
+	padding: 20px;
+
+	margin: 0 auto;
+
+	border-radius: 30px;	
+
+}
+
+.forma_zakaza_items{
+
+	list-style: none;
+
+	margin: 0 auto;
+
+}
+
+.forma_zakaza_items li{
+
+	margin-left: 20px;
+
+	margin-bottom: 20px;
+
+}
+
+.zagruzka{
+
+	width: 400px;
+
+	border-color: #000000;
+
+	border-radius: 30px;
+
+}
+
+.left-img {
+
+    float:left; 
+
+    width: 300px;
+
+    height: 300px;
+
+    margin-right: 10px;
+
+}
+
+.proizvodstvo_wrapper{
+
+	padding: 0px 30px 0px 30px;
+
+}
+
+.adress_apteka_text{
+
+	display: flex;
+
+}
+
+.adress_apteka_wrapper_adress{
+
+	margin-top:  50px;
+
+}
+
+.licenzia{
+
+	margin-left: 150px;	
+
+	z-index: 8; 
+
+}
+
+.size_plus{
+
+
+
+	width: 700px;
+
+	height: 331px;
+
+	margin-left: 150px;
+
+	cursor: pointer;
+
+	position: absolute;
+
+	z-index: 10;
+
+	font-size: 40px; 	
+
+}
+
+.size_plus:hover{
+
+	display: block;
+
+	width: 700px;
+
+	height: 331px;
+
+	margin-left: 150px;
+
+	background: rgba(77, 113, 171,0.5);
+
+	color: #FFFFFF;
+
+	position:absolute;
+
+	z-index: 10; 
+
+	font-size: 40px; 	
+
+}
+
+.about_apteka{
+
+	margin-left: 10px;
+
+}
+
+.proizvodstvo_wrapper{
+
+
+
+}
+
+.main_wrapper_card{
+
+	padding: 20px;
+
+}
+
+.tabke_spravka{
+
+	text-decoration: none;
+
+	border-collapse:collapse;
+
+	width:90%;
+
+	text-align:center;
+
+	border: 1px solid #4a587f;
+
+	margin-left:50px; 
+
+}
+
+	.tabke_spravka th{
+
+		font-weight:normal;
+
+		font-size:16px;
+
+		color:#ffffff;
+
+		background-color:#4a587f;
+
+		border: 1px solid #595959;
+
+	}
+
+	.tabke_spravka td{
+
+		font-size:14px;
+
+		color:#4a587f;
+
+		border: 1px solid #4a587f;
+
+	}
+
+
+
+.spisok_bonusov{
+
+	list-style: none;
+
+	display: flex;
+
+}
+
+.spisok_bonusov li{
+
+	margin-left: 30px;
+
+	width: 100px;
+
+	height: 100px;
+
+	padding: 20px;
+
+	font-size: 12px;
+
+	background-color: #8b9ede;
+
+	border-radius: 30px;
+
+	text-align: center;
+
+	color: #FFFFFF;  
+
+	  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+.wrapper_info_programm{
+
+	display: flex;
+
+
+
+}
+
+.wrapper_info_programm section{
+
+	margin-left: 30px;
+
+}
+
+.priemushestva_wrapper{
+
+	display: flex;
+
+	list-style: none;
+
+	justify-content: space-between;
+
+}
+
+.priemushestva_wrapper li{
+
+margin-left: 20px;
+
+	width: 200px;
+
+	text-align: center;
+
+}
+
+.priemushestva_wrapper img{
+
+	width: 50px;
+
+	height: 50px;
+
+}
+
+.forma_lk{
+
+	display: none;
+
+	position:fixed;
+
+	background: rgba(77, 113, 171,0.7);;
+
+	width: 100%;
+
+	height: 100%;
+
+	left: 0;
+
+	top: 0;
+
+	z-index: 8;
+
+	padding: 20px;
+
+	overflow-y: auto; 
+
+}
+
+.forma_lk_form{
+
+	background: #FFFFFF;
+
+	width: 500px;
+
+	padding: 20px;
+
+	margin: 0 auto;
+
+}
+
+.close_form_lk{
+
+	margin-left: 450px;
+
+}
+
+.close_form_lk:hover{
+
+	 color: #328f6c;
+
+	 cursor: pointer;
+
+}
+
+.forma_lk_batton{
+
+  background: transparent;
+
+	color: #8b9ede;
+
+	border: none;
+
+}
+
+.forma_lk_batton:hover{
+
+	 color: #328f6c;
+
+	 cursor: pointer;
+
+}
+
+.lk:hover{
+
+	cursor: pointer;
+
+}
+
